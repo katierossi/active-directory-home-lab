@@ -36,7 +36,6 @@ Examples:
 - krossi
 - jsmith
 - adoe
-- achen
 
 ---
 
@@ -51,7 +50,6 @@ Groups
 
 Managed Computers
 - Workstations
-- Servers
 
 ---
 
