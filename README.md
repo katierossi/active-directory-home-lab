@@ -1,11 +1,10 @@
 # Active Directory Home Lab
-
 ![Windows Server](https://img.shields.io/badge/Windows_Server_2022-0078D6?style=flat-square&logo=windows&logoColor=white)
 ![Active Directory](https://img.shields.io/badge/Active_Directory-2F5597?style=flat-square)
 ![Group Policy](https://img.shields.io/badge/Group_Policy-005A9C?style=flat-square)
 ![VMware](https://img.shields.io/badge/VMware_Workstation-607078?style=flat-square&logo=vmware&logoColor=white)
 
-This project documents the deployment and administration of a Windows Server 2022 Active Directory lab built in VMware Workstation.
+This project documents the deployment and administration of a Windows Server 2022 Active Directory lab built in VMware Workstation, and is part of an ongoing IT home lab portfolio focused on developing hands-on enterprise administration skills.
 
 The environment simulates a small business network and demonstrates core Windows administration tasks including Active Directory, Organizational Units, security groups, NTFS permissions, SMB file sharing, Group Policy, mapped network drives, and domain security policies.
 
