@@ -11,8 +11,6 @@
 | Hostname | Purpose |
 |----------|---------|
 | RM-DC01 | Primary Domain Controller |
-| RM-FS01 | File Server (Future) |
-| RM-APP01 | Application Server (Future) |
 
 ---
 
@@ -21,15 +19,12 @@
 | Hostname | Purpose |
 |----------|---------|
 | RM-WS01 | First Employee Workstation |
-| RM-WS02 | Second Employee Workstation |
 
 ---
 
 ## User Accounts
 
-Naming Convention:
-
-First Initial + Last Name
+**Naming Convention:** First Initial + Last Name (all lowercase)
 
 Examples:
 
@@ -42,19 +37,21 @@ Examples:
 ## Organizational Units
 
 Employees
-- IT
-- HR
-- Sales
+├── IT
+├── HR
+└── Sales
 
 Groups
 
 Managed Computers
-- Workstations
+└── Workstations
 
 ---
 
 ## Security Groups
 
-- IT Staff
-- HR Staff
-- Sales Staff
+| Group | Purpose |
+|-------|---------|
+| IT Staff | IT department access |
+| HR Staff | HR department access |
+| Sales Staff | Sales department access |
