@@ -202,8 +202,8 @@ Planned improvements include:
 
 ## Repository Structure
 
-```text
-.
+active-directory-home-lab
+│
 ├── README.md
 ├── Diagrams
 ├── Docs
