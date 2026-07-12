@@ -37,9 +37,9 @@ Examples:
 ## Organizational Units
 
 Employees
-├── IT
-├── HR
-└── Sales
+- IT
+- HR
+- Sales
 
 Groups
 

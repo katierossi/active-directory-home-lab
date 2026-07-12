@@ -83,85 +83,85 @@ The Windows 11 workstation is joined to the domain and is used to verify authent
 
 The lab was built in VMware Workstation using a Windows Server 2022 Domain Controller and a Windows 11 Enterprise client. The environment is isolated from the host network, making it easy to test configuration changes without affecting other devices.
 
-![Lab Overview](Screenshots/Final/01-lab-overview.png)
+![Lab Overview](images/01-lab-overview.png)
 
 ### 2. Organizational Units
 
 Departmental Organizational Units (IT, HR, and Sales) were created beneath the Employees OU to organize user accounts and simplify administration. This structure also makes it easier to target Group Policy Objects to specific users.
 
-![Organizational Units](Screenshots/Final/02-organizational-units.png)
+![Organizational Units](images/02-organizational-units.png)
 
 ### 3. Managed Workstations
 
 A dedicated Organizational Unit was created for domain-joined computers. Separating computer accounts from user accounts provides a cleaner Active Directory structure and allows computer-specific policies to be applied later.
 
-![Workstation OU](Screenshots/Final/03-workstation-ou.png)
+![Workstation OU](images/03-workstation-ou.png)
 
 ### 4. Domain Authentication
 
 The Windows 11 workstation was successfully joined to the **rossi.local** domain, allowing users to authenticate using Active Directory credentials instead of local accounts.
 
-![Domain Login](Screenshots/Final/04-domain-login.png)
+![Domain Login](images/04-domain-login.png)
 
 ### 5. Security Groups
 
 Departmental security groups were used to manage access to shared resources. Assigning permissions to groups instead of individual users makes administration simpler and easier to maintain as the environment grows.
 
-![Security Group Membership](Screenshots/Final/05-security-group-membership.png)
+![Security Group Membership](images/05-security-group-membership.png)
 
 ### 6. Department File Shares
 
 Separate file shares were created for each department to simulate a small business file server. This structure provides centralized storage while allowing each department to have its own permissions.
 
-![Department Shares](Screenshots/Final/06-company-share-structure.png)
+![Department Shares](images/06-company-share-structure.png)
 
 ### 7. NTFS Permissions
 
 NTFS permissions were configured using the principle of least privilege. Department security groups were granted only the permissions required to perform their jobs while administrative accounts retained Full Control.
 
-![NTFS Permissions](Screenshots/Final/07-ntfs-permissions.png)
+![NTFS Permissions](images/07-ntfs-permissions.png)
 
 ### 8. Department Network Share
 
 The IT share contains folders for policies, procedures, software, and onboarding documentation. Access to the share is controlled through Active Directory security groups and later mapped automatically through Group Policy.
 
-![IT Network Share](Screenshots/Final/08-it-network-share.png)
+![IT Network Share](images/08-it-network-share.png)
 
 ### 9. Group Policy Drive Mapping
 
 Group Policy Preferences were used to automatically map departmental network drives during user sign-in. This eliminates the need to manually configure drive mappings on individual workstations.
 
-![Group Policy Drive Mapping](Screenshots/Final/09-gpo-drive-mapping.png)
+![Group Policy Drive Mapping](images/09-gpo-drive-mapping.png)
 
 ### 10. Group Policy Verification
 
 The **GPResult** command was used on the Windows 11 workstation to verify that the Group Policy Object was successfully applied to the logged-in user, confirming that the drive mapping policy deployed as expected.
 
-![GPResult Verification](Screenshots/Final/10-gpresult.png)
+![GPResult Verification](images/10-gpresult.png)
 
 ### 11. IT Drive Mapping
 
 The IT department share was automatically mapped after Group Policy was processed, giving authorized users immediate access to departmental resources.
 
-![IT Drive Mapping](Screenshots/Final/11-it-drive.png)
+![IT Drive Mapping](images/11-it-drive.png)
 
 ### 12. HR Drive Mapping
 
 The HR department received its own mapped network drive through the same Group Policy process, demonstrating department-based access control.
 
-![HR Drive Mapping](Screenshots/Final/12-hr-drive.png)
+![HR Drive Mapping](images/12-hr-drive.png)
 
 ### 13. Sales Drive Mapping
 
 The Sales department drive was mapped automatically for authorized users, providing consistent access management across all departments.
 
-![Sales Drive Mapping](Screenshots/Final/13-sales-drive.png)
+![Sales Drive Mapping](images/13-sales-drive.png)
 
 ### 14. Domain Password Policy
 
 A domain password policy was configured through Group Policy to enforce password complexity, minimum password length, password history, and password expiration requirements.
 
-![Password Policy](Screenshots/Final/14-password-policy.png)
+![Password Policy](images/14-password-policy.png)
 
 ## Skills Demonstrated
 
@@ -200,14 +200,3 @@ Planned improvements include:
 - Deploying DHCP and WSUS
 - Adding additional client workstations
 
-## Repository Structure
-
-active-directory-home-lab
-│
-├── README.md
-├── Diagrams
-├── Docs
-│   └── naming-conventions.md
-└── Screenshots
-    └── Final
-    
