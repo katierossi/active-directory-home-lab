@@ -1,10 +1,10 @@
 # Naming Standards
 
+This document defines the naming conventions used throughout this lab to maintain consistency across servers, workstations, user accounts, Organizational Units (OUs), and security groups.
+
 ## Company
 
 **Rossi Manufacturing**
-
----
 
 ## Servers
 
@@ -12,15 +12,11 @@
 |----------|---------|
 | RM-DC01 | Primary Domain Controller |
 
----
-
 ## Workstations
 
 | Hostname | Purpose |
 |----------|---------|
 | RM-WS01 | First Employee Workstation |
-
----
 
 ## User Accounts
 
@@ -32,8 +28,6 @@ Examples:
 - jsmith
 - adoe
 
----
-
 ## Organizational Units
 
 Employees
@@ -41,12 +35,8 @@ Employees
 - HR
 - Sales
 
-Groups
-
 Managed Computers
-└── Workstations
-
----
+-Workstations
 
 ## Security Groups
 
