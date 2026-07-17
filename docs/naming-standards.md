@@ -36,7 +36,7 @@ Employees
 - Sales
 
 Managed Computers
--Workstations
+- Workstations
 
 ## Security Groups
 
